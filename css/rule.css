@@ -1,0 +1,211 @@
+#rule .classes {
+  position: relative; }
+  #rule .classes img {
+    width: 100%; }
+  #rule .classes a {
+    position: absolute;
+    font-size: 0.28rem;
+    top: 28%;
+    width: 21.5%;
+    text-align: center;
+    left: 7%;
+    color: #00f1fa; }
+  #rule .classes a:nth-child(2) {
+    left: 28.5%; }
+  #rule .classes a:nth-child(3) {
+    left: 50%; }
+  #rule .classes a:nth-child(4) {
+    left: 71.5%; }
+#rule .ruleAndAward {
+  margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  height: 7.4rem;
+  overflow-y: scroll;
+  margin-bottom: 1.5888rem;
+}
+  #rule .ruleAndAward ul li {
+    margin-bottom: 15px; }
+  #rule .ruleAndAward .ruleBox .leftRule {
+    position: relative;
+    width: 28%;
+    margin-left: 4%; }
+    #rule .ruleAndAward .ruleBox .leftRule img {
+      width: 100%; }
+    #rule .ruleAndAward .ruleBox .leftRule p {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      text-align: center;
+      font-size: 0.28rem;
+      line-height: 0.46rem; }
+  #rule .ruleAndAward .ruleBox .rightRule {
+    margin-left: 2%;
+    width: 64%;
+    font-size: 0.25rem;
+    line-height: 0.46rem;
+    color: #00f1fa; }
+    #rule .ruleAndAward .ruleBox .rightRule span {
+      color: white; }
+  #rule .ruleAndAward .awardPic {
+    margin-top: 25px; }
+    #rule .ruleAndAward .awardPic .awardOne {
+      position: relative;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+      #rule .ruleAndAward .awardPic .awardOne > img {
+        width: 100%; }
+      #rule .ruleAndAward .awardPic .awardOne .awardBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    #rule .ruleAndAward .awardPic .awardTwo {
+      position: relative;
+      width: 95%;
+      margin: 0 auto; }
+      #rule .ruleAndAward .awardPic .awardTwo > img {
+        width: 100%; }
+      #rule .ruleAndAward .awardPic .awardTwo .awardBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  #rule .ruleAndAward .awardLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    width: 47.5%;
+    height: 100%; }
+    #rule .ruleAndAward .awardLeft img {
+      width: auto;
+      height: 36%; }
+    #rule .ruleAndAward .awardLeft p:nth-child(2) {
+      text-align: center;
+      font-size: 0.2rem;
+      color: #07d4af;
+      margin-top: 10px;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      outline: 1px solid #07d4af; }
+    #rule .ruleAndAward .awardLeft p:nth-child(3) {
+      text-align: center;
+      font-size: 0.2rem;
+      color: #ffffff;
+      margin-top: 10px; }
+      #rule .ruleAndAward .awardLeft p:nth-child(3) span {
+        color: #e3af3f; }
+  #rule .ruleAndAward .awardMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    width: 5%;
+    height: 100%; }
+    #rule .ruleAndAward .awardMiddle img {
+      width: 100%; }
+  #rule .ruleAndAward .awardRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    width: 47.5%;
+    height: 100%; }
+    #rule .ruleAndAward .awardRight img {
+      width: auto;
+      height: 36%; }
+    #rule .ruleAndAward .awardRight p:nth-child(2) {
+      text-align: center;
+      font-size: 0.2rem;
+      color: #07d4af;
+      margin-top: 10px;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      outline: 1px solid #07d4af; }
+    #rule .ruleAndAward .awardRight p:nth-child(3) {
+      text-align: center;
+      font-size: 0.2rem;
+      color: #ffffff;
+      margin-top: 10px; }
+      #rule .ruleAndAward .awardRight p:nth-child(3) span {
+        color: #e3af3f; }
+  #rule .ruleAndAward .awardTitleOne {
+    position: absolute;
+    width: 61%;
+    left: 20%;
+    top: -6%; }
+    #rule .ruleAndAward .awardTitleOne img {
+      width: 100%; }
+    #rule .ruleAndAward .awardTitleOne p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0.28rem;
+      font-weight: bold;
+      line-height: 0.47rem; }
+  #rule .ruleAndAward .awardTitleTwo {
+    position: absolute;
+    width: 61%;
+    left: 20%;
+    top: -6%; }
+    #rule .ruleAndAward .awardTitleTwo img {
+      width: 100%; }
+    #rule .ruleAndAward .awardTitleTwo p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0.28rem;
+      font-weight: bold;
+      line-height: 0.47rem; }
+  #rule .ruleAndAward .awardBoxTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    #rule .ruleAndAward .awardBoxTwo img {
+      height: 45%; }
+    #rule .ruleAndAward .awardBoxTwo p {
+      width: 100%;
+      text-align: center;
+      font-size: 0.28rem;
+      font-weight: bold;
+      line-height: 0.42rem;
+      color: #00f1fa;
+      margin-top: 10px; }
+
+.aActive {
+  font-weight: bold !important; }
+
+.tangle {
+  margin-left: 16%; }
+
+/*# sourceMappingURL=rule.css.map */

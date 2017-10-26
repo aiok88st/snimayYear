@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="诗尼曼年度十优评选盛典">
+		<meta name="description" content="诗尼曼年度十优评选盛典">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/public.css?v=1" />
+		<link rel="stylesheet" href="css/won.css" />
+		<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery-1.11.1.min.js" ></script>
+		<link rel="stylesheet" href="../static/layui/css/layui.css">
+		<script type="text/javascript" src="../static/layui/layui.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<title>诗尼曼年度十优评选盛典榜单</title>
+	</head>
+	<body id="vueMain">
+		<!--logo-->
+		<div id="won" style="display: none;">
+			<div class="stepTitle">
+				<img src="img/wonTitle.png" />
+			</div>
+			<div class="classBox">
+				<div class="classes">
+					<a href="###" class="aActive rSelect indexS" v-on:click="seachs(1)">设计师</a>
+					<a href="###" class="rSelect indexS" v-on:click="seachs(2)">店长</a>
+					<a href="###" class="rSelect indexS" v-on:click="seachs(3)">顾问</a>
+					<a href="###" class="rSelect indexS" v-on:click="seachs(4)">工程师</a>
+					<img src="img/class.png" />
+					<img src="img/sjx.png" style="width: 11px;" class="design tangle" />
+				</div>
+			</div>
+			<div class="awardAndPerson">
+				<div class="awardOne">
+					<img src="img/awardBox.png" />
+					<div class="awardBox">
+						<p>（终选<span>前三名获得</span>）</p>
+						<div class="awardLeft floatl">
+							<img src="img/computer.png" />
+							<p class="name">Microsoft Surface Pro 4</p>
+							
+						</div>
+						<div class="awardMiddle floatl">
+							<img src="img/add.png" />
+						</div>
+						<div class="awardRight floatl">
+							<img src="img/taiwan.png" />
+							<p>线上万元广告奖励</p>
+						</div>
+						<div class="clearl"></div>
+					</div>
+					<div class="awardTitleOne">
+						<img src="img/awardBkg.png" />
+						<p>年度十优特等奖3名</p>
+					</div>
+				</div>
+				<div class="searchResult" id="searchResult">
+                    <template v-for="item in searchResult">
+					<div class="message">
+						<div class="ml floatl">
+							<div class="headImg">
+								<img src="{{imgLink + item.user_pics}}" />
+							</div>
+						</div>
+						<div class="mr floatl">
+							<ul>
+								<li>
+									<p>NO：{{item.id}}</p>
+									<p>姓名：{{item.username}}</p>
+									<p>店名：{{item.sell_name}}</p>
+									<p>票数：{{item.clicknum}}</p>
+									<p>排名：{{item.rank}}</p>
+								</li>
+							</ul>
+						</div>
+						<div class="clearl"></div>
+                        <template v-if='item.rank==1'>
+                            <div class="imgShow" >
+                                <img src="img/no1.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank==2'>
+                            <div class="imgShow" >
+                                <img src="img/no2.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank==3'>
+                            <div class="imgShow" >
+                                <img src="img/no3.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank>3'>
+                            <div class="textShow">
+                                <p>{{item.rank}}</p>
+                            </div>
+                        </template>
+					</div>
+                    </template>
+
+				</div>
+				<div class="awardTwo">
+					<img src="img/awardBox.png" />
+					<div class="awardBoxTwo">
+						<p>（该组网络投票<span>前十名</span>获得）</p>
+						<img src="img/headset.png" />
+						<p>奖品：小米运动蓝牙耳机</p>
+					</div>
+					<div class="awardTitleTwo">
+						<img src="img/awardBkg.png" />
+						<p>TOP网络人气奖前10名</p>
+					</div>
+				</div>
+				<div class="searchResult">
+                    <template v-for="item in searchResults">
+					<div class="message">
+						<div class="ml floatl">
+							<div class="headImg">
+								<img src="{{imgLink + item.user_pics}}" />
+							</div>
+						</div>
+						<div class="mr floatl">
+							<ul>
+								<li>
+									<p>NO：{{item.id}}</p>
+									<p>姓名：{{item.username}}</p>
+									<p>店名：{{item.sell_name}}</p>
+									<p>票数：{{item.clicknum}}</p>
+									<p>排名：{{item.rank}}</p>
+								</li>
+							</ul>
+						</div>
+						<div class="clearl"></div>
+                        <template v-if='item.rank==1'>
+                            <div class="imgShow" >
+                                <img src="img/no1.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank==2'>
+                            <div class="imgShow" >
+                                <img src="img/no2.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank==3'>
+                            <div class="imgShow" >
+                                <img src="img/no3.png" />
+                            </div>
+                        </template>
+                        <template v-if='item.rank>3'>
+                            <div class="textShow">
+                                <p>{{item.rank}}</p>
+                            </div>
+                        </template>
+					</div>
+                    </template>
+
+				</div>
+			</div>
+		</div>
+		<!--弹窗2-->
+		<div id="popWin2" class="popWin" style="display: none;">
+			<div class="popBox">
+				<img src="img/winBox.png" />
+				<img src="img/cry.png" />
+				<!--<img src="img/close.png" class="close" />-->
+				<div class="popBoxin">
+					<p>活动未开始！</p>
+					<p>敬请期待！</p>
+					<p></p>
+					<p>2017年10月18日～10月31日</p>
+				</div>
+			</div>
+		</div>
+		<!--底部导航-->
+		<div id="popW" style="display: none;"></div>
+		<div style="height: 1.4rem;"></div>
+		<div id="bottomNav">
+			<ul>
+				<li class="navBox">
+					<a href="index.html">
+						<img src="img/homeh.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="navBox" onclick="applys()">
+					<a href="javascript:;">
+						<img src="img/applyh.png" />
+						<p>报名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="order.html">
+						<img src="img/orderh.png" />
+						<p>排名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="rule.html">
+						<img src="img/ruleh.png" />
+						<p>规则</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="won.html">
+						<img src="img/wonv.png" />
+						<p>获奖</p>
+					</a>
+				</li>
+			</ul>
+			<div class="clearl"></div>
+		</div>
+        <div style="display: none">
+            <script src="https://s19.cnzz.com/z_stat.php?id=1265074528&web_id=1265074528" language="JavaScript"></script>
+        </div>
+	</body>
+    <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+	<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/won.js" ></script>
+    <!--<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/public.js?v=1" ></script>-->
+
+    <script type="text/javascript" src="js/public.js" ></script>
+    <script src="http://oy0j10ovl.bkt.clouddn.com/vue-won.js?v=2"></script>
+
+
+	<!--<script src="js/vue-won.js?v=2"></script>-->
+	<script>
+		(function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+			function popWindow88(error){
+				$('#popW').show();
+				$('#popW').html('<div class="allWindow" style="z-index: 999;"><div class="popBox"><img src="img/winBox.png" /><img src="img/laugh.png" /><img src="img/close.png" class="closed" /><div class="popBoxin"><p style="margin-left: 10px;margin-right: 10px;">'+error+'</p></div></div></div>')
+				$(document).on('touchstart','.closed',function(){
+					$('#popW').hide();
+					window.location.href="http://toupiao.snimay.com/public/home/index.html";
+				});
+			}
+            popWindow88("获奖名单将在活动结束后进行公布");
+
+        })(document, window);
+
+
+	</script>
+</html>

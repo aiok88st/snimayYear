@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="keywords" content="诗尼曼年度十优评选盛典">
+        <meta name="description" content="诗尼曼年度十优评选盛典">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/rule.css?v=2" />
+        <script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery-1.11.1.min.js" ></script>
+        <link rel="stylesheet" href="../static/layui/css/layui.css">
+        <script type="text/javascript" src="../static/layui/layui.js"></script>
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<title>诗尼曼年度十优评选盛典</title>
+	</head>
+	<body>
+		<!--活动规则-->
+		<div id="rule" style="padding-top: 20px;">
+			<div class="stepTitle" style="margin: 0;">
+				<p>活动规则</p>
+				<img src="img/stepTitle.png" />
+			</div>
+			<div class="classes">
+				<a href="###" class="aActive rSelect">设计师</a>
+				<a href="###" class="rSelect" >店长</a>
+				<a href="###" class="rSelect" >顾问</a>
+				<a href="###" class="rSelect" >工程师</a>
+				<img src="img/class.png"/>
+				<img src="img/sjx.png"  style="width: 11px;" class="design tangle"/>
+			</div>
+			<div class="ruleAndAward" style="margin-bottom: 0.95rem;">
+				<div class="awardPic">
+					<div class="awardOne">
+						<img src="img/awardBox.png" />
+						<div class="awardBox">
+							<div class="awardLeft floatl">
+								<img src="img/computer.png" />
+								<p class="name">Microsoft Surface Pro 4</p>
+								<!--<p>终选<span>前三名获得</span></p>-->
+							</div>
+							<div class="awardMiddle floatl">
+								<img src="img/add.png" />
+							</div>
+							<div class="awardRight floatl" style="margin-top: 4%;">
+								<img src="img/taiwan.png" />
+								<p>线上万元广告奖励</p>
+								<p><span>(特等奖3名)</span></p>
+							</div>
+							<div class="clearl"></div>
+						</div>		
+						<div class="awardTitleOne">
+							<img src="img/awardBkg.png" />
+							<p>年度十优创意设计师奖品</p>
+						</div>
+					</div>
+					<div class="awardTwo">
+						<img src="img/awardBox.png" />
+						<div class="awardBoxTwo">
+							<img src="img/headset.png" />
+							<p>奖品：小米运动蓝牙耳机</p>
+						</div>
+						<div class="awardTitleTwo">
+							<img src="img/awardBkg.png" />
+							<p>TOP10网络人气奖品</p>
+						</div>						
+					</div>
+				</div>
+				<div class="ruleBox" style="margin-top: 15px;">
+					<ul>
+
+						<li>
+							<div class="leftRule floatl">
+								<img src="img/ruleBkg.png" />
+								<p>活动形式</p>
+							</div>
+							<div class="rightRule floatl">
+								<p>【网络投票+专家评审】，网络投票票选TOP10网络人气奖，专家评审综合票选出年度十优。</p>
+							</div>
+							<div class="clearl"></div>
+						</li>
+                        <li>
+                            <div class="leftRule floatl">
+                                <img src="img/ruleBkg.png" />
+                                <p>活动流程</p>
+                            </div>
+                            <div class="rightRule floatl">
+                                <p>1. 每个微信用户每日可投5票；</p>
+                                <p>2. 按照网络投票票数排名，票选出TOP10网络人气奖；</p>
+                                <p>3. 专家评审根据参赛作品综合评分，票选年度十优；</p>
+                                <p>4. TOP10网络人气奖奖品派寄；</p>
+                                <p>5. 年度十优颁奖盛典。</p>
+                            </div>
+                            <div class="clearl"></div>
+                        </li>
+					</ul>					
+				</div>
+				
+			</div>
+		</div>
+		<!--弹窗2-->
+		<div id="popWin2" class="popWin" style="display: none;">
+			<div class="popBox">
+				<img src="img/winBox.png" />
+				<img src="img/cry.png" />
+				<!--<img src="img/close.png" class="close" />-->
+				<div class="popBoxin">
+					<p>活动未开始！</p>
+					<p>敬请期待！</p>
+					<p></p>
+					<p>2017年10月18日～10月31日</p>
+				</div>
+			</div>
+		</div>
+		<div id="popW" style="display: none;"></div>
+		<div style="height: 1.5888rem;"></div>
+		<!--底部导航-->
+		<div id="bottomNav">
+			<ul>
+				<li class="navBox">
+					<a href="index.html" >
+						<img src="img/homeh.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="navBox" onclick="applys()">
+					<a href="javascript:;">
+						<img src="img/applyh.png" />
+						<p>报名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="order.html" >
+						<img src="img/orderh.png" />
+						<p>排名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="###">
+						<img src="img/rulev.png" />
+						<p>规则</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="won.html" >
+						<img src="img/wonh.png" />
+						<p>获奖</p>
+					</a>
+				</li>
+			</ul>
+			<div class="clearl"></div>
+		</div>
+        <div style="display: none">
+            <script src="https://s19.cnzz.com/z_stat.php?id=1265074528&web_id=1265074528" language="JavaScript"></script>
+        </div>
+	</body>
+	<script type="text/javascript" src="js/rule.js?v=1" ></script>
+    <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+    <!--<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/public.js?v=1" ></script>-->
+    <script src="http://oy0j10ovl.bkt.clouddn.com/vue.js"></script>
+
+	<script type="text/javascript" src="js/public.js" ></script>
+	<!--<script src="js/vue.js"></script>-->
+	<script>
+		(function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+		var browser = {
+			versions: function () {
+				var u = navigator.userAgent, app = navigator.appVersion;
+				return {//移动终端浏览器版本信息
+					trident: u.indexOf('Trident') > -1, //IE内核
+					presto: u.indexOf('Presto') > -1, //opera内核
+					webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+					gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+					mobile: !!u.match(/AppleWebKit.*Mobile/i) || !!u.match(/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/), //是否为移动终端
+					ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+					android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+					iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+					iPad: u.indexOf('iPad') > -1, //是否iPad
+					webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+				};
+			} (),
+			language: (navigator.browserLanguage || navigator.language).toLowerCase()
+		}
+		if (browser.versions.iPhone || browser.versions.iPad || browser.versions.ios) {
+			$('.ruleAndAward').css('margin-bottom','0rem');
+            $('.ruleAndAward').css('padding-bottom','0.9rem');
+		}
+
+	</script>
+</html>

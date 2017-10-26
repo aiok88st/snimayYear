@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="keywords" content="诗尼曼年度十优评选盛典">
+		<meta name="description" content="诗尼曼年度十优评选盛典">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable"/>
+		<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no" name="format-detection"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index.css?v=1" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery-1.8.2.min.js" ></script>
+		<link rel="stylesheet" href="../static/layui/css/layui.css">
+		<script type="text/javascript" src="../static/layui/layui.js"></script>
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js" ></script>
+        <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+        <link rel="stylesheet" href="css/jcountdown.css" />
+        <script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/jquery.jcountdown.min.js" ></script>
+
+		<title>诗尼曼年度十优评选盛典</title>
+	</head>
+	<body id="vueMain">
+		<!--主页-->
+		<div id="main" >
+			<div class="banner">
+				<img src="img/index.png" />
+			</div>
+            <div id="mains">
+                <div class="bottomRed">
+                    <div class="redBox">
+                        <div class="conntent">
+                            <p>距离投票开始倒计时</p>
+                            <div class="countdown"></div>
+                            <div class="label">
+                                <p style="font-size: 12px;">天</p >
+                                <p style="font-size: 12px;">时</p >
+                                <p style="font-size: 12px;">分</p >
+                                <p style="font-size: 12px;">秒</p >
+                                <div style="clear: left;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="data">
+				<div class="floatl dataBox">
+					<img src='img/ruleBkg.png' />
+					<p>{{system.regist_number}}</p>
+					<p>已报名人数</p>
+				</div>
+				<div class="floatl dataBox">
+					<img src='img/ruleBkg.png' />
+					<p>{{system.votes_number}}</p>
+					<p>投票人数</p>
+				</div>
+				<div class="floatl dataBox">
+					<img src='img/ruleBkg.png' />
+					<p>{{system.brow_number}}</p>
+					<p>浏览量</p>
+				</div>
+				<div class="clearl"></div>
+			</div>
+			<div class="classBox">
+				<div class="classes">
+					<a href="javascript:;" value="1" class="aActive rSelect indexS" v-on:click="seachs(1)">设计师</a>
+					<a href="javascript:;" value="2" class="rSelect indexS" v-on:click="seachs(2)">店长</a>
+					<a href="javascript:;" value="3" class="rSelect indexS" v-on:click="seachs(3)">顾问</a>
+					<a href="javascript:;" value="4" class="rSelect indexS" v-on:click="seachs(4)">工程师</a>
+					<img src="img/class.png"/>
+					<img src="img/sjx.png" id="sjx" style="width: 11px;" class="design tangle tangle1"/>
+				</div>
+			</div>
+			<div class="search">
+				<div class="sl floatl">
+					<input type="search" placeholder="请输入名字搜索" id="seachData" />
+				</div>
+				<div class="sr floatl" v-on:click="seachData()">
+					<input type="image" value="搜索查找" src="img/next.png" />
+					<p>搜索查找</p>
+				</div>
+				<div class="clearl"></div>
+			</div>
+			<div id="vote" >
+				<div class="classBox">
+					<!--<div class="classes">-->
+						<!--<a href="javascript:;" value="1" class="aActive rSelect voteS">设计师</a>-->
+						<!--<a href="javascript:;" value="2" class="rSelect voteS">店长</a>-->
+						<!--<a href="javascript:;" value="3" class="rSelect voteS">顾问</a>-->
+						<!--<a href="javascript:;" value="4" class="rSelect voteS">工程师</a>-->
+						<!--<img src="img/class.png" />-->
+						<!--<img src="img/sjx.png"  style="width: 11px;" class="design tangle tangle1" />-->
+					<!--</div>-->
+				</div>
+				<div class="voteBox" style="margin-bottom: 10px;">
+
+                    <template v-for="item in homeList">
+					<div class="voteChild floatl" style="margin-bottom: 0.2rem">
+						<div class="headImg" v-on:click="getDatas(item.id,item.group_id)">
+							<img src="{{imgLink + item.user_pic}}" />
+							<div class="order">
+								<img src="img/topLeft.png" />
+								<p>{{item.id}}</p>
+							</div>
+							<p>排名：{{item.rank}}</p>
+						</div>
+						<div class="votemsg">
+							<div class="your">
+								<p>姓名：{{item.username}}</p>
+								<p id="clicknum_{{item.id}}">{{item.clicknum}}票</p>
+								<p></p>
+							</div>
+							<div class="voteBtn">
+								<div class="votel floatl" v-on:click="setNum(item.id,item.group_id)">
+									<a href="javascript:;" class="yourVote">
+										<p>投TA</p>
+										<p>一票</p>
+									</a>
+								</div>
+								<div class="voter floatl" onclick="fenxiang()">
+									<a href="###" class="share">
+										<p>分享</p>
+									</a>
+								</div>
+								<div class="clearl"></div>
+							</div>
+						</div>
+					</div>
+                    </template>
+
+					<div class="clearl"></div>
+				</div>
+			</div>
+            <template v-if="homeList != ''">
+            <div class="sr floatl" v-on:click="more()" style="margin-left: 37%;">
+                <input type="image" value="查看更多" src="img/next.png" />
+                <p>查看更多</p>
+            </div>
+            </template>
+		</div>
+
+		<!--投票-->
+		<div id="searchResult" style="display:none;">
+			<div class="line">
+				<p>搜索结果</p>
+				<p style="width: 38%;"></p>
+				<p style="width: 38%;"></p>
+			</div>
+            <div class="classBox" style="padding-top: 20px">
+                <div class="classes">
+                    <a href="###" class="aActive rSelect voteS">设计师</a>
+                    <a href="###" class="rSelect voteS">店长</a>
+                    <a href="###" class="rSelect voteS">顾问</a>
+                    <a href="###" class="rSelect voteS">工程师</a>
+                    <img src="img/class.png" />
+                    <img src="img/sjx.png" id="" style="width: 11px;" class="design tangle tangle2" />
+                </div>
+            </div>
+			<div class="search" style="padding-top: 10px">
+				<div class="sl floatl">
+					<input type="search" placeholder="请输入名字搜索" id="seachDatas" />
+				</div>
+				<div class="sr floatl" v-on:click="seachDatas()">
+					<input type="image" value="搜索查找" src="img/next.png" />
+					<p>搜索查找</p>
+				</div>
+				<div class="clearl"></div>
+			</div>
+            <template v-for="item in searchResult">
+			<div class="message">
+				<div class="ml floatl" v-on:click="getDatas(item.id,item.group_id)">
+					<div class="headImg">
+						<img src="{{imgLink + item.user_pic}}" />
+					</div>
+				</div>
+				<div class="mr floatl">
+					<ul>
+						<li>
+							<p>姓名：{{item.username}}</p>
+							<p>店名：{{item.sell_name}}</p>
+							<p class="clicknum_{{item.id}}">票数：{{item.clicknum}}</p>
+						</li>
+						<li>
+							<div class="voteBtn">
+								<div class="votel floatl" v-on:click="setNum(item.id,item.group_id)">
+									<a href="javascript:;" class="yourVote" />
+										<p>投TA</p>
+										<p>一票</p>
+									</a>
+								</div>
+								<div class="voter floatl" onclick="fenxiang()">
+									<a href="###" class="share">
+										<p>分享</p>
+									</a>
+								</div>
+								<div class="clearl"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clearl"></div>
+			</div>
+            </template>
+		</div>
+		<!--介绍页面-->
+
+		<!--分享页面-->
+		<div id="shareWin" style="display: none;">
+			<img src="img/share.png" />
+			<div class="sharText">
+				<p>快分享到朋友圈</p>
+				<p>告诉大家 谁才是你心目中的“十佳”</p>
+				<p>呼朋唤友 为ta打call</p>
+			</div>
+		</div>
+		<!--投票弹窗-->
+		<div class="votePop" style="display: none;">
+			<div class="vbox">
+				<div class="vimg1">					
+				</div>
+				<div class="vimg2">
+					<img src="img/w.png" />
+				</div>
+				<div class="vimg3"></div>
+				<div class="vimg4"></div>
+				<p>NO.20</p>
+				<p>姓名：刘雨</p>
+				<p>组别：设计师</p>
+				<p class="tips">您还有3票！</p>
+				<a href="###" class="confirm">确认</a>
+			</div>
+		</div>
+		<!--弹窗2-->
+		<div id="popWin2" class="popWin" style="display: none;">
+			<div class="popBox">
+				<img src="img/winBox.png" />
+				<img src="img/cry.png" />
+				<!--<img src="img/close.png" class="close" />-->
+				<div class="popBoxin">
+					<p>投票活动已结束！</p>
+					<p>感谢关注！</p>
+					<p></p>
+					<p>2017年10月18日～10月27日</p>
+				</div>
+			</div>
+		</div>
+		<!--票数用完-->
+		<div id="popWin4" class="popWindow" style="display: none;z-index: 999;">
+			<div class="popBox">
+				<img src="img/winBox.png" />
+				<img src="img/cry.png" />
+				<img src="img/close.png" class="close" />
+				<div class="popBoxin">
+					<p>很抱歉！</p>
+					<p>您的票数已用完！</p>
+				</div>
+			</div>
+		</div>
+		<!--投票成功-->
+		<div id="voteSuccess" style="display: none;">
+			<div class="successBkg">
+				<img src="img/successBkg.png" />
+				<a href="###" class="return">返回</a>
+				<a href="###" class="help">帮TA拉票</a>
+			</div>
+		</div>
+		<div id="popW" style="display: none;"></div>
+		<!--底部导航-->
+		<div style="height: 1.5888rem;"></div>
+		<div id="bottomNav">
+			<ul>
+				<li class="navBox">
+					<a href="index.html">
+						<img src="img/homev.png" />
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="navBox" onclick="applys()">
+					<a href="javascript:;">
+						<img src="img/applyh.png" />
+						<p>报名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="order.html">
+						<img src="img/orderh.png" />
+						<p>排名</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="rule.html">
+						<img src="img/ruleh.png" />
+						<p>规则</p>
+					</a>
+				</li>
+				<li class="navBox">
+					<a href="won.html">
+						<img src="img/wonh.png" />
+						<p>获奖</p>
+					</a>
+				</li>
+			</ul>
+			<div class="clearl"></div>
+		</div>
+				<div style="display: none">
+					<script src="https://s19.cnzz.com/z_stat.php?id=1265074528&web_id=1265074528" language="JavaScript"></script>
+				</div>
+
+	</body>
+    <script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/index.js" ></script>
+    <!--<script type="text/javascript" src="http://oy0j10ovl.bkt.clouddn.com/public.js?v=1" ></script>-->
+    <script src="http://oy0j10ovl.bkt.clouddn.com/vue-index.js?v=2"></script>
+	<!--<script type="text/javascript" src="js/index.js" ></script>-->
+	<script type="text/javascript" src="js/public.js?v=1" ></script>
+	<!--<script src="js/vue-index.js?v=2"></script>-->
+	<script>
+		(function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+        //i为改变时间
+        $(function(){
+            $('.label').width($(window).width()/2);
+            var b = new Date;
+            var b = -b.getTimezoneOffset() / 60;
+            var i = '2017/11/6 23:59:59';
+            var w = $(window).width()/2;
+            var config = {
+                timeText: i, //倒计时时间
+                timeZone: b, //时区
+                style: "flip", //显示的样式，可选值有flip,slide,metal,crystal
+                color: "black", //显示的颜色，可选值white,black
+                width: w, //倒计时宽度
+                textGroupSpace: 15, //天、时、分、秒之间间距
+                textSpace: 0, //数字之间间距
+                reflection: !1, //是否显示倒影
+                reflectionOpacity: 10, //倒影透明度
+                reflectionBlur: 0, //倒影模糊程度
+                dayTextNumber: 1, //倒计时天数数字个数
+                displayDay: !0, //是否显示天数
+                displayHour: !0, //是否显示小时数
+                displayMinute: !0, //是否显示分钟数
+                displaySecond: !0, //是否显示秒数
+                displayLabel: !1, //是否显示倒计时底部label
+                start:!0,
+                onFinish: function() {
+
+                }
+            };
+            $(".countdown").jCountdown(config);
+        });
+
+        function fenxiang(){
+            $("#shareWin").show();
+        }
+		$('.close').on('touchstart',function(){
+			$('#popWin4').hide();
+		});
+	</script>
+</html>

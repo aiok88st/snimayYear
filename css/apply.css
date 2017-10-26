@@ -1,0 +1,425 @@
+#firstStep .banner img {
+  width: 100%; }
+#firstStep .select {
+  margin-top: 15px; }
+  #firstStep .select button {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    border: 0;
+    background-color: #00f1fa; }
+  #firstStep .select .selected {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    border: 0;
+    background-color: #066162;
+    text-align: center;
+    margin-top: 5px; }
+
+.next {
+  margin-top: 6.8%;
+  margin-bottom: 6.8%;
+  font-size: 0.28rem; 
+  }
+  .next button {
+    width: 24%;
+    display: inline-block;
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    font-weight: bold;
+    height: 0.5rem;
+    border: 0;
+    background: url(../img/next.png) no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 0!important;}
+.next button:nth-child(1){
+	margin-left: 1.40rem;
+	margin-right: 0.44rem;
+}
+.upPhoto > p {
+  font-size: 0.24rem;
+  color: #00f1fa;
+  width: 100%;
+  text-align: center;
+  background: url(../img/photo.png) no-repeat center center;
+  background-size: 80%; }
+
+.secondStep .upPhoto .head {
+  padding-top: 10px;
+  width: 40.8%;
+  margin: 0 auto; }
+  .secondStep .upPhoto .head img {
+    width: 100%; }
+.secondStep .upPhoto .ptips {
+  padding: 5px 0;
+  font-size: 0.24rem;
+  color: #797979;
+  width: 100%;
+  text-align: center; }
+.secondStep .message ul > li {
+  position: relative;
+  width: 74%;
+  display: block;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  line-height: 0.7rem;
+  height: 0.7rem;
+  margin-bottom: 5px; }
+  .secondStep .message ul > li .inputL {
+    width: 35%;
+    height: 0.5rem;
+    text-align: center;
+    text-indent: 0.15rem;
+    color: white; }
+  .secondStep .message ul > li .inputR {
+    width: 62%;
+    height: 0.5rem; }
+  .secondStep .message ul > li input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    color: #00f1fa;
+    font-size: 0.28rem;
+    background-color: transparent; }
+  .secondStep .message ul > li input::-moz-placeholder {
+    font-size: 0.28rem;
+    color: #00f1fa; }
+  .secondStep .message ul > li input::-ms-input-placeholder {
+    font-size: 0.28rem;
+    color: #00f1fa; }
+  .secondStep .message ul > li input::-webkit-input-placeholder {
+    font-size: 0.28rem;
+    color: #00f1fa; }
+  .secondStep .message ul > li textarea {
+    display: block;
+    width: 93%;
+    min-height: 3.0rem;
+    resize: none;
+    border: 0;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    margin-left: 4%;
+    background-color: transparent;
+    color: white;
+    text-indent: 0.48rem; }
+  .secondStep .message ul > li textarea::-moz-placeholder {
+    color: white; }
+  .secondStep .message ul > li textarea::-ms-input-placeholder {
+    color: white; }
+  .secondStep .message ul > li textarea::-webkit-input-placeholder {
+    color: white; }
+.secondStep .message ul li:nth-child(1) {
+  background: url(../img/mBkg.jpg) no-repeat;
+  background-size: 100% 100%; }
+.secondStep .message ul > li:nth-child(2) {
+  margin-top: 7px;
+  min-height: 3.0rem;
+  background: url(../img/textareaBkg.png) no-repeat;
+  background-size: cover; }
+  .secondStep .message ul > li:nth-child(2) .ptop p {
+    width: 35%;
+    text-align: center;
+    text-indent: 0.15rem;
+    color: white;
+    line-height: 0.6rem;
+    font-weight: bold; }
+  .secondStep .message ul > li:nth-child(2) .pMid {
+    display: block;
+    width: 93%;
+    font-size: 0.24rem;
+    line-height: 0.36rem;
+    margin-left: 4%;
+    color: white; }
+    .secondStep .message ul > li:nth-child(2) .pMid input {
+      width: 57%;
+      margin: 0% 1%;
+      float: left;
+      font-size: 0.24rem;
+      line-height: 0.36rem;
+      margin-top: 0.06rem;
+      color: white;
+      text-align: center;
+      border-bottom: 1px solid white; }
+.secondStep .message ul > li:nth-child(2) .pMid input::-moz-placeholder{
+	color: white;
+	font-size: 0.24rem;
+}
+.secondStep .message ul > li:nth-child(2) .pMid input::-ms-input-placeholder{
+	color: white;
+	font-size: 0.24rem;
+	
+}
+.secondStep .message ul > li:nth-child(2) .pMid input::-webkit-input-placeholder{
+	color: white;
+	font-size: 0.24rem;
+	
+}
+    .secondStep .message ul > li:nth-child(2) .pMid p {
+      float: left; }
+  .secondStep .message ul > li:nth-child(2) .pBottom {
+    position: relative; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span {
+      position: absolute;
+      display: inline-block;
+      width: 93%;
+      margin-left: 4%;
+      border-bottom: 1px solid white;
+      left: 0; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(1) {
+      top: 0.35rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(2) {
+      top: 0.71rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(3) {
+      top: 1.07rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(4) {
+      top: 1.43rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(5) {
+      top: 1.79rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(6) {
+      top: 2.15rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(7) {
+      top: 2.51rem; }
+    .secondStep .message ul > li:nth-child(2) .pBottom span:nth-child(8) {
+      top: 2.87rem; }
+
+.next button {
+  margin-bottom: 5px; }
+
+#secondStepTwo .headTwo {
+  padding-top: 10px;
+  width: 47.73%;
+  margin: 0 auto; }
+  #secondStepTwo .headTwo img {
+    width: 100%; }
+
+.thridStep .upload ul li {
+  margin-bottom: 10px; }
+.thridStep .upload .imgup {
+  position: relative;
+  width: 78%;
+  margin: 0 auto; }
+  .thridStep .upload .imgup img {
+    width: 100%; }
+  .thridStep .upload .imgup input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    opacity: 0; }
+  .thridStep .upload .imgup .imgTips {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column; }
+    .thridStep .upload .imgup .imgTips p {
+      font-size: 0.24rem;
+      color: #00f1fa; }
+.thridStep .upload .imgupTwo {
+  width: 100% !important; }
+.thridStep .upload .explain {
+  width: 78%;
+  min-height: 1.95rem;
+  background: url(../img/text.jpg) no-repeat;
+  background-size: cover;
+  font-size: 0.28rem;
+  line-height: 0.5rem;
+  height: 0.5rem;
+  margin: 0 auto; }
+  .thridStep .upload .explain textarea {
+    display: block;
+    width: 96%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    min-height: 1.8rem;
+    resize: none;
+    border: 0;
+    font-size: 0.28rem;
+    line-height: 0.36rem;
+    margin-left: 3%;
+    background-color: transparent;
+    color: #797979; }
+  .thridStep .upload .explain textarea::-moz-placeholder {
+    color: #797979; }
+  .thridStep .upload .explain textarea::-ms-input-placeholder {
+    color: #797979; }
+  .thridStep .upload .explain textarea::-webkit-input-placeholder {
+    color: #797979; }
+
+.popWin {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  .popWin .popBox {
+    position: relative;
+    width: 56%; }
+    .popWin .popBox img {
+      width: 100%; }
+    .popWin .popBox img:nth-child(2) {
+      position: absolute;
+      width: 38%;
+      top: -16%;
+      left: 31%; }
+    .popWin .popBox img:nth-child(3) {
+      position: absolute;
+      width: 20%;
+      bottom: -10%;
+      left: 40%; }
+    .popWin .popBox .popBoxin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      -webkit-flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 0.24rem;
+      line-height: 0.5rem;
+      color: #00f1fa;
+      text-align: center; }
+      .popWin .popBox .popBoxin p:nth-child(1) {
+        font-size: 0.32rem; }
+      .popWin .popBox .popBoxin p:nth-child(2) {
+        font-size: 0.32rem; }
+      .popWin .popBox .popBoxin p:nth-child(3) {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #00F1FA; }
+
+#popWin3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  #popWin3 img {
+    width: 90%; }
+
+#run {
+	position:relative;
+  width: 100%;
+  font-size: 0.24rem;
+  color: #00F1FA;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  overflow-x: hidden;
+  -ms-overflow-x: hidden;
+  
+
+}
+#run >p{
+  	visibility: hidden;
+ }
+#run .runBox{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+#run .runBox1{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.link{
+  width: 35%;
+  height: 0.5rem;
+  text-align: center;
+  text-indent: 0.15rem;
+  color: white;
+    float: left;
+}
+.linkR{
+    width: 62%;
+    height: 0.5rem;
+    float: left;
+}
+.message1{
+	width: 78%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	margin: 0 auto;
+	background: url(../img/mBkg.jpg) no-repeat;
+	background-size: cover;
+	font-size: 0.28rem;
+	
+}
+.inputL1{
+	width: 21%;
+	color: white;
+	text-indent: 0.15rem;
+	text-align: center;
+}
+.inputR1{
+	width: 79%;
+	color: white;
+}
+.inputR1 input{
+	border: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 0.5rem;
+	background: rgba(0,0,0,0);
+	color: white;
+  font-size: 0.28rem;
+}
+.inputR1 input::-webkit-input-placeholder{
+	color: white;
+	font-size: 0.28rem;
+}
+.inputR1 input::-ms-input-placeholder{
+	color: white;
+	font-size: 0.28rem;
+}
+.inputR1 input::-moz-placeholder{
+	color: white;
+	font-size: 0.28rem;
+}
+/*# sourceMappingURL=apply.css.map */
+
