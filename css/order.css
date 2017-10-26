@@ -81,7 +81,7 @@
       width: 21.5%;
       text-align: center;
       left: 7%;
-      color: #00f1fa; }
+      color: #08d4af; }
     .classBox .classes a:nth-child(2) {
       left: 28.5%; }
     .classBox .classes a:nth-child(3) {
@@ -97,7 +97,7 @@
 
 #searchResult .message {
   position: relative;
-  color: #00f1fa;
+  color: #08d4af;
   margin-left: 5%;
   background-color: #1a191f;
   padding: 0.15rem 2%;
@@ -120,7 +120,7 @@
       font-size: 0.24rem;
       text-align: center;
       line-height: 0.45rem;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       color: black;
       border-radius: 5px;
       font-weight: bold; }
@@ -158,7 +158,7 @@
   position: relative; }
   .line p {
     font-size: 0.28rem;
-    color: #00f1fa; }
+    color: #08d4af; }
   .line p:nth-child(1) {
     width: 100%;
     text-align: center;
@@ -168,13 +168,13 @@
     width: 32%;
     top: 50%;
     left: 0%;
-    border-bottom: 1px solid #00f1fa; }
+    border-bottom: 1px solid #08d4af; }
   .line p:nth-child(3) {
     position: absolute;
     width: 32%;
     top: 50%;
     right: 0%;
-    border-bottom: 1px solid #00f1fa; }
+    border-bottom: 1px solid #08d4af; }
 
 .line1 {
   margin-top: 10px;
@@ -192,7 +192,7 @@
       height: 0.9rem;
       display: block;
       margin-left: 23%;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -239,7 +239,7 @@
     -webkit-flex-direction: column; }
     .votePop .vbox p {
       font-size: 0.28rem;
-      color: #00f1fa;
+      color: #08d4af;
       line-height: 0.4rem;
       text-align: center; }
     .votePop .vbox .vimg1 {
@@ -296,7 +296,7 @@
       left: 25%;
       display: block;
       width: 50%;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       border-radius: 5px;
       font-size: 0.36rem;
       line-height: 0.6rem;
@@ -350,7 +350,7 @@
       height: 100%;
       font-size: 0.24rem;
       line-height: 0.5rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center; }
       .popWin .popBox .popBoxin p {
         font-size: 0.32rem; }
@@ -402,7 +402,7 @@
       height: 100%;
       font-size: 0.24rem;
       line-height: 0.5rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center; }
       .popWindow .popBox .popBoxin p:nth-child(1) {
         font-size: 0.32rem; }
@@ -413,7 +413,7 @@
         margin: 0 auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-bottom: 1px solid #00F1FA; }
+        border-bottom: 1px solid #08d4af; }
 
 #voteSuccess {
   position: fixed;
@@ -443,7 +443,7 @@
       line-height: 0.6rem;
       color: black;
       width: 35%;
-      background: #00f1fa;
+      background: #08d4af;
       text-align: center;
       border-radius: 5px;
       top: 60%; }

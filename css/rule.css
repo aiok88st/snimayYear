@@ -9,7 +9,7 @@
     width: 21.5%;
     text-align: center;
     left: 7%;
-    color: #00f1fa; }
+    color: #08d4af; }
   #rule .classes a:nth-child(2) {
     left: 28.5%; }
   #rule .classes a:nth-child(3) {
@@ -44,7 +44,7 @@
     width: 64%;
     font-size: 0.25rem;
     line-height: 0.46rem;
-    color: #00f1fa; }
+    color: #08d4af; }
     #rule .ruleAndAward .ruleBox .rightRule span {
       color: white; }
   #rule .ruleAndAward .awardPic {
@@ -91,11 +91,11 @@
     #rule .ruleAndAward .awardLeft p:nth-child(2) {
       text-align: center;
       font-size: 0.2rem;
-      color: #07d4af;
+      color: #08d4af;
       margin-top: 10px;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
-      outline: 1px solid #07d4af; }
+      outline: 1px solid #08d4af; }
     #rule .ruleAndAward .awardLeft p:nth-child(3) {
       text-align: center;
       font-size: 0.2rem;
@@ -133,11 +133,11 @@
     #rule .ruleAndAward .awardRight p:nth-child(2) {
       text-align: center;
       font-size: 0.2rem;
-      color: #07d4af;
+      color: #08d4af;
       margin-top: 10px;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
-      outline: 1px solid #07d4af; }
+      outline: 1px solid #08d4af; }
     #rule .ruleAndAward .awardRight p:nth-child(3) {
       text-align: center;
       font-size: 0.2rem;
@@ -199,7 +199,7 @@
       font-size: 0.28rem;
       font-weight: bold;
       line-height: 0.42rem;
-      color: #00f1fa;
+      color: #08d4af;
       margin-top: 10px; }
 
 .aActive {

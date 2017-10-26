@@ -4,32 +4,14 @@ $(function(){
 	$(document).on('touchstart','.selected',function(){
 		index = $(this).val();
 		$('.open').text("您的选择："+$(this).text());
-		$(this).css('background-color','#00f1fa');
+		$(this).css('background-color','#08d4af');
 		$(this).siblings('li').css('background-color','#066162');
 	});
 	//报名
-	$(document).on('click','#popWin3',function(){
+	$(document).on('touchstart','#popWin3',function(){
 		$(this).hide();
 		$('#popWin4').show();
 	});
-	//跑马灯
-	//var lefts = $(window).width();
-	//$('.runBox').css('left',lefts+'px');
-	//var lefts1 = lefts+$('.runBox').width()+20;
-	//$('.runBox1').css('left',lefts1+'px');
-	//var run = $('.runBox').width();
-	//setInterval(function(){
-	//	if(lefts==-run){
-	//		lefts=20;
-	//		$('.runBox').css('left',lefts+'px');
-	//		lefts1 = lefts+$('.runBox').width()+20;
-	//		$('.runBox1').css('left',lefts1+'px');
-	//	}
-	//	lefts--;
-	//	lefts1--;
-	//	$('.runBox').css('left',lefts+'px');
-	//	$('.runBox1').css('left',lefts1+'px');
-	//},20);
 });
 
 

@@ -10,7 +10,7 @@
     line-height: 0.5rem;
     height: 0.5rem;
     border: 0;
-    background-color: #00f1fa; }
+    background-color: #08d4af; }
   #firstStep .select .selected {
     width: 60%;
     display: block;
@@ -45,7 +45,7 @@
 }
 .upPhoto > p {
   font-size: 0.24rem;
-  color: #00f1fa;
+  color: #08d4af;
   width: 100%;
   text-align: center;
   background: url(../img/photo.png) no-repeat center center;
@@ -85,18 +85,18 @@
     width: 100%;
     height: 100%;
     border: 0;
-    color: #00f1fa;
+    color: #08d4af;
     font-size: 0.28rem;
     background-color: transparent; }
   .secondStep .message ul > li input::-moz-placeholder {
     font-size: 0.28rem;
-    color: #00f1fa; }
+    color: #08d4af; }
   .secondStep .message ul > li input::-ms-input-placeholder {
     font-size: 0.28rem;
-    color: #00f1fa; }
+    color: #08d4af; }
   .secondStep .message ul > li input::-webkit-input-placeholder {
     font-size: 0.28rem;
-    color: #00f1fa; }
+    color: #08d4af; }
   .secondStep .message ul > li textarea {
     display: block;
     width: 93%;
@@ -230,7 +230,7 @@
     -webkit-flex-direction: column; }
     .thridStep .upload .imgup .imgTips p {
       font-size: 0.24rem;
-      color: #00f1fa; }
+      color: #08d4af; }
 .thridStep .upload .imgupTwo {
   width: 100% !important; }
 .thridStep .upload .explain {
@@ -309,7 +309,7 @@
       height: 100%;
       font-size: 0.24rem;
       line-height: 0.5rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center; }
       .popWin .popBox .popBoxin p:nth-child(1) {
         font-size: 0.32rem; }
@@ -320,7 +320,7 @@
         margin: 0 auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-bottom: 1px solid #00F1FA; }
+        border-bottom: 1px solid #08d4af; }
 
 #popWin3 {
   position: fixed;
@@ -345,7 +345,7 @@
 	position:relative;
   width: 100%;
   font-size: 0.24rem;
-  color: #00F1FA;
+  color: #08d4af;
   margin-top: 15px;
   margin-bottom: 5px;
   overflow-x: hidden;

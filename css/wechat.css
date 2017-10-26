@@ -100,7 +100,7 @@ body {
 }
 
 .stepTitle p:nth-child(1) {
-	color: #00f1fa;
+	color: #08d4af;
 	font-size: 0.4rem;
 	font-weight: bold;
 	top: -15%
@@ -176,7 +176,7 @@ body {
 	height: 100%;
 	font-size: 0.24rem;
 	line-height: 0.5rem;
-	color: #00f1fa;
+	color: #08d4af;
 	text-align: center
 }
 
@@ -193,7 +193,7 @@ body {
 	margin: 0 auto;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	border-bottom: 1px solid #00F1FA
+	border-bottom: 1px solid #08d4af
 }
 #firstStep .banner img {
   width: 100%; }
@@ -207,7 +207,7 @@ body {
     line-height: 0.5rem;
     height: 0.5rem;
     border: 0;
-    background-color: #00f1fa; }
+    background-color: #08d4af; }
   #firstStep .select .selected {
     width: 60%;
     display: block;

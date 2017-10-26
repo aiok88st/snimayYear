@@ -59,7 +59,7 @@
       text-align: center;
       font-size: 0.24rem;
       line-height: 0.42rem;
-      color: #00f1fa;
+      color: #08d4af;
       margin-top: 10px; }
     #won .awardAndPerson .awardBoxTwo p:nth-child(1) {
       font-size: 0.24rem;
@@ -84,11 +84,11 @@
     #won .awardAndPerson .awardLeft p:nth-child(2) {
       text-align: center;
       font-size: 0.2rem;
-      color: #07d4af;
+      color: #08d4af;
       margin-top: 10px;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
-      outline: 1px solid #07d4af; }
+      outline: 1px solid #08d4af; }
     #won .awardAndPerson .awardLeft p:nth-child(3) {
       text-align: center;
       font-size: 0.2rem;
@@ -126,11 +126,11 @@
     #won .awardAndPerson .awardRight p:nth-child(2) {
       text-align: center;
       font-size: 0.2rem;
-      color: #07d4af;
+      color: #08d4af;
       margin-top: 10px;
       border-left: 1px solid transparent;
       border-right: 1px solid transparent;
-      outline: 1px solid #07d4af; }
+      outline: 1px solid #08d4af; }
   #won .awardAndPerson .awardTitleOne {
     position: absolute;
     width: 61%;
@@ -177,7 +177,7 @@
       width: 21.5%;
       text-align: center;
       left: 7%;
-      color: #00f1fa; }
+      color: #08d4af; }
     .classBox .classes a:nth-child(2) {
       left: 28.5%; }
     .classBox .classes a:nth-child(3) {
@@ -196,7 +196,7 @@
   margin-bottom: 30px; }
   .searchResult .message {
     position: relative;
-    color: #00f1fa;
+    color: #08d4af;
     margin-left: 5%;
     background-color: #1a191f;
     padding: 0.15rem 2%;
@@ -219,7 +219,7 @@
         font-size: 0.24rem;
         text-align: center;
         line-height: 0.45rem;
-        background-color: #00f1fa;
+        background-color: #08d4af;
         color: black;
         border-radius: 5px;
         font-weight: bold; }

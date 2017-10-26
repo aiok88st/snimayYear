@@ -75,7 +75,7 @@
     width: 21.5%;
     text-align: center;
     left: 7%;
-    color: #00f1fa; }
+    color: #08d4af; }
   .classBox .classes a:nth-child(2) {
     left: 28.5%; }
   .classBox .classes a:nth-child(3) {
@@ -111,7 +111,7 @@
       #vote .voteBox .voteChild .headImg > img {
         width: 100%; }
       #vote .voteBox .voteChild .headImg > p {
-        background-color: #00f1fa;
+        background-color: #08d4af;
         font-size: 0.24rem;
         font-weight: bold;
         position: absolute;
@@ -152,7 +152,7 @@
       #vote .voteBox .voteChild .votemsg .your p:nth-child(3) {
         width: 94%;
         margin: 0 auto;
-        border-bottom: 1px solid #00F1FA; }
+        border-bottom: 1px solid #08d4af; }
 
 #shareWin {
   position: fixed;
@@ -229,7 +229,7 @@
   position: relative; }
   .line p {
     font-size: 0.28rem;
-    color: #00f1fa; }
+    color: #08d4af; }
   .line p:nth-child(1) {
     width: 100%;
     text-align: center;
@@ -239,13 +239,13 @@
     width: 32%;
     top: 50%;
     left: 0%;
-    border-bottom: 1px solid #00f1fa; }
+    border-bottom: 1px solid #08d4af; }
   .line p:nth-child(3) {
     position: absolute;
     width: 32%;
     top: 50%;
     right: 0%;
-    border-bottom: 1px solid #00f1fa; }
+    border-bottom: 1px solid #08d4af; }
 
 .line1 {
   margin-top: 10px;
@@ -261,7 +261,7 @@
       height: 0.9rem;
       display: block;
       margin-left: 23%;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -283,7 +283,7 @@
       height: 0.9rem;
       display: block;
       margin-left: 11%;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -330,7 +330,7 @@
     -webkit-flex-direction: column; }
     .votePop .vbox p {
       font-size: 0.28rem;
-      color: #00f1fa;
+      color: #08d4af;
       line-height: 0.4rem;
       text-align: center; }
     .votePop .vbox .vimg1 {
@@ -387,7 +387,7 @@
       left: 25%;
       display: block;
       width: 50%;
-      background-color: #00f1fa;
+      background-color: #08d4af;
       border-radius: 5px;
       font-size: 0.36rem;
       line-height: 0.6rem;
@@ -441,7 +441,7 @@
       height: 100%;
       font-size: 0.24rem;
       line-height: 0.5rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center; }
       .popWin .popBox .popBoxin p {
         font-size: 0.32rem; }
@@ -493,7 +493,7 @@
       height: 100%;
       font-size: 0.24rem;
       line-height: 0.5rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center; }
       .popWindow .popBox .popBoxin p:nth-child(1) {
         font-size: 0.32rem; }
@@ -504,7 +504,7 @@
         margin: 0 auto;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-bottom: 1px solid #00F1FA; }
+        border-bottom: 1px solid #08d4af; }
 
 #voteSuccess {
   position: fixed;
@@ -534,7 +534,7 @@
       line-height: 0.6rem;
       color: black;
       width: 35%;
-      background: #00f1fa;
+      background: #08d4af;
       text-align: center;
       border-radius: 5px;
       top: 60%; }
@@ -608,13 +608,13 @@
     position: relative; }
     #intro .introTitleBox > p:nth-child(1) {
       width: 28%;
-      border-bottom: 1px solid #00f1fa;
+      border-bottom: 1px solid #08d4af;
       position: absolute;
       top: 35%;
       left: 2%; }
     #intro .introTitleBox > p:nth-child(2) {
       width: 28%;
-      border-bottom: 1px solid #00f1fa;
+      border-bottom: 1px solid #08d4af;
       position: absolute;
       top: 35%;
       right: 2%; }
@@ -637,10 +637,10 @@
         -webkit-flex-direction: column; }
         #intro .designer .dBoxl .dBoxll img {
           width: 98%;
-          border: 1px dashed #00f1fa; }
+          border: 1px dashed #08d4af; }
       #intro .designer .dBoxl p {
         font-size: 0.24rem;
-        color: #00f1fa;
+        color: #08d4af;
         text-align: center;
         line-height: 0.7rem; }
     #intro .designer .dBoxr {
@@ -659,17 +659,17 @@
         -webkit-flex-direction: column; }
         #intro .designer .dBoxr .dBoxrr img {
           width: 98%;
-          border: 1px dashed #00f1fa; }
+          border: 1px dashed #08d4af; }
       #intro .designer .dBoxr p {
         font-size: 0.24rem;
-        color: #00f1fa;
+        color: #08d4af;
         text-align: center;
         line-height: 0.7rem; }
     #intro .designer .dBoxBottom ul li:nth-child(1) img {
       width: 100%; }
     #intro .designer .dBoxBottom ul li:nth-child(2) p {
       font-size: 0.24rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center;
       line-height: 0.7rem; }
 
@@ -743,7 +743,7 @@
       width: 100%; }
   .worker .workerBox .wb p {
     font-size: 0.24rem;
-    color: #00f1fa;
+    color: #08d4af;
     text-align: center;
     margin: 0.1rem 0; }
 
@@ -820,13 +820,13 @@
     position: relative; }
     #intro-shop .introTitleBox > p:nth-child(1) {
       width: 28%;
-      border-bottom: 1px solid #00f1fa;
+      border-bottom: 1px solid #08d4af;
       position: absolute;
       top: 35%;
       left: 2%; }
     #intro-shop .introTitleBox > p:nth-child(2) {
       width: 28%;
-      border-bottom: 1px solid #00f1fa;
+      border-bottom: 1px solid #08d4af;
       position: absolute;
       top: 35%;
       right: 2%; }
@@ -849,10 +849,10 @@
         -webkit-flex-direction: column; }
         #intro-shop .designer .dBoxl .dBoxll img {
           width: 98%;
-          border: 1px dashed #00f1fa; }
+          border: 1px dashed #08d4af; }
       #intro-shop .designer .dBoxl p {
         font-size: 0.24rem;
-        color: #00f1fa;
+        color: #08d4af;
         text-align: center;
         line-height: 0.7rem; }
     #intro-shop .designer .dBoxr {
@@ -871,17 +871,17 @@
         -webkit-flex-direction: column; }
         #intro-shop .designer .dBoxr .dBoxrr img {
           width: 98%;
-          border: 1px dashed #00f1fa; }
+          border: 1px dashed #08d4af; }
       #intro-shop .designer .dBoxr p {
         font-size: 0.24rem;
-        color: #00f1fa;
+        color: #08d4af;
         text-align: center;
         line-height: 0.7rem; }
     #intro-shop .designer .dBoxBottom ul li:nth-child(1) img {
       width: 100%; }
     #intro-shop .designer .dBoxBottom ul li:nth-child(2) p {
       font-size: 0.24rem;
-      color: #00f1fa;
+      color: #08d4af;
       text-align: center;
       line-height: 0.7rem; }
   #intro-shop .banner {
@@ -934,7 +934,7 @@
     width: 0.9rem;
     height: 0.9rem;
     display: block;
-    background-color: #00f1fa;
+    background-color: #08d4af;
     opacity: 0.85;
     display: flex;
     justify-content: center;
