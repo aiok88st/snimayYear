@@ -71,7 +71,7 @@
   .classBox .classes a {
     position: absolute;
     font-size: 0.28rem;
-    top: 28%;
+    top: 30%;
     width: 21.5%;
     text-align: center;
     left: 7%;
@@ -187,9 +187,9 @@
     margin-top: 15px; }
   #searchResult .ml {
     width: 48%;
-    height: 2.15rem; }
+    height: 2.3rem; }
     #searchResult .ml .headImg {
-      height: 2.15rem;
+      height: 2.3rem;
       overflow-x: hidden;
       display: flex;
       justify-content: center;
@@ -205,15 +205,16 @@
       #searchResult .ml .headImg > img {
         width: 100%; }
   #searchResult .mr {
+    position: relative;
     margin-left: 2%;
     width: 50%;
-    height: 2.15rem; }
+    height: 2.3rem; }
     #searchResult .mr ul li:nth-child(1) p {
       width: 100%;
       font-size: 0.24rem;
-      line-height: 0.4rem; }
+      line-height: 0.36rem; }
   #searchResult .voteBtn {
-    padding: 0.05rem 0rem 0rem 0rem; }
+    padding: 0.0rem 0rem 0rem 0rem; }
     #searchResult .voteBtn .votel {
       margin-left: 30%;
       width: 35%; }
@@ -560,13 +561,13 @@
     height: 1.44rem; }
     #intro .topIntop .intror .il {
       width: 50%;
-      color: #00dce4; }
+      color: #08d4af; }
       #intro .topIntop .intror .il p {
         font-size: 0.28rem;
         line-height: 0.4rem; }
     #intro .topIntop .intror .ir {
       width: 50%;
-      color: #00dce4; }
+      color: #08d4af; }
       #intro .topIntop .intror .ir p {
         float: right;
         font-size: 0.28rem;
@@ -577,7 +578,7 @@
     #intro .topIntop .intror ul li:nth-child(2) {
       padding-top: 0.05rem;
       font-size: 0.24rem;
-      color: #c9c9c9; }
+      color: #ffffff; }
       #intro .topIntop .intror ul li:nth-child(2) p {
         font-size: 0.24rem; }
   #intro .topOrder {
@@ -585,9 +586,12 @@
     #intro .topOrder > div {
       width: 33%;
       font-size: 0.24rem;
-      color: #00dce4;
+      color: #08d4af;
       text-align: center;
       line-height: 0.36rem; }
+  #intro .topOrder > div>p:nth-child(1){
+    color: white;
+  }
     #intro .topOrder > div:nth-child(2) {
       width: 34%; }
   #intro .introTitle {
@@ -772,13 +776,13 @@
     height: 1.44rem; }
     #intro-shop .topIntop .intro2 .il {
       width: 50%;
-      color: #00dce4; }
+      color: #08d4af; }
       #intro-shop .topIntop .intro2 .il p {
         font-size: 0.28rem;
         line-height: 0.4rem; }
     #intro-shop .topIntop .intro2 .ir {
       width: 50%;
-      color: #00dce4; }
+      color: #08d4af; }
       #intro-shop .topIntop .intro2 .ir p {
         float: right;
         font-size: 0.28rem;
@@ -797,7 +801,7 @@
     #intro-shop .topOrder > div {
       width: 33%;
       font-size: 0.24rem;
-      color: #00dce4;
+      color: #08d4af;
       text-align: center;
       line-height: 0.36rem; }
     #intro-shop .topOrder > div:nth-child(2) {

@@ -22,7 +22,7 @@ $.ajax({
                 title: '2017年诗尼曼年度十优评选盛典开赛啦',
                 desc: '颜值担当、人气爆棚、实力至上、百万大奖……火热全开，尽在这里！',
                 link: "http://toupiao.snimay.com/public/home/index.html",
-                imgUrl: 'http://toupiao.snimay.com/public/home/img/fenxiang.png?v=1',//
+                imgUrl: 'http://toupiao.snimay.com/public/home/img/fenxiang.png?v=2',//
                 trigger: function (res) {
                 },
                 success: function (res) {
@@ -37,7 +37,7 @@ $.ajax({
                 title: '2017年诗尼曼年度十优评选盛典开赛啦',
                 desc: '颜值担当、人气爆棚、实力至上、百万大奖……火热全开，尽在这里！',
                 link: "http://toupiao.snimay.com/public/home/index.html",
-                imgUrl: 'http://toupiao.snimay.com/public/home/img/fenxiang.png?v=1',//
+                imgUrl: 'http://toupiao.snimay.com/public/home/img/fenxiang.png?v=2',//
                 trigger: function (res) {
                 },
                 success: function (res) {
@@ -55,7 +55,7 @@ $.ajax({
 function popWindow(error){
 	$('#popW').show();
 	$('#popW').html('<div class="allWindow" style="z-index: 999;"><div class="popBox"><img src="img/winBox.png" /><img src="img/laugh.png" /><img src="img/close.png" class="closed" /><div class="popBoxin"><p style="margin-left: 10px;margin-right: 10px;">'+error+'</p></div></div></div>')
-	$(document).on('touchstart','.closed',function(){
+	$('.closed').on('click',function(){
 		$('#popW').hide();
 	});
 }
@@ -94,7 +94,7 @@ function applys(){
     //})
     //return;
     $.ajax({
-        url:"http://toupiao.snimay.com/index.php/checkLogin",//  http://127.0.0.1/snimay/index.php/checkLogin
+        url:"http://toupiao.snimay.com/index.php/checkLogin",// http://127.0.0.1/snimay/index.php/checkLogin
         type:"get",
         success:function(re){
             //if(re.code == 404){
@@ -102,7 +102,7 @@ function applys(){
             //    return;
             //}
             if(re.code == 0){
-                window.location.href="http://toupiao.snimay.com/public/home/apply.html";//  http://127.0.0.1/snimay/public/home/apply.html
+                window.location.href="http://toupiao.snimay.com/public/home/apply.html";// http://127.0.0.1/snimay/public/home/apply.html
             }else if(re.code == 1){
                 var url = "get_des";
                 if(re.thumb < 2){

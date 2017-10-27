@@ -1,7 +1,7 @@
 
 $(function(){
 	//首页
-	$('.indexS').on('click',function(){
+	$('.indexS').on('touchstart',function(){
 		var index = $(this).index();
 		$(this).addClass('aActive');
 		$(this).siblings('a').removeClass('aActive');
@@ -21,7 +21,7 @@ $(function(){
 		}
 	});
 	//搜索
-	$('.voteS').on('click',function(){
+	$('.voteS').on('touchstart',function(){
 		var index = $(this).index();
 		$(this).addClass('aActive');
 		$(this).siblings('a').removeClass('aActive');
@@ -41,22 +41,24 @@ $(function(){
 		}
 	});
 	//分享
-	$('.share').on('click',function(){
+	$('.share').on('touchstart',function(){
 		$('#shareWin').show();
 	});
-	$('#shareWin').on('click',function(){
+	$('#shareWin').on('touchstart',function(e){
+		var e = e||window.event;
+		e.preventDefault();
 		$(this).hide();
 	});
 
 	//返回
-	$('.return').on('click',function(){
+	$('.return').on('touchstart',function(){
 		$('#voteSuccess').hide();
 	});
-	$('.help').on('click',function(){
+	$('.help').on('touchstart',function(){
 		$('#voteSuccess').hide();
 		$('#shareWin').show();
 	});
-	$('.close').on('click',function(){
+	$('.close').on('touchstart',function(){
 		$('#popWin4').hide();
 	});
 	//var banner = new Swiper('.swiper-container', {

@@ -525,6 +525,7 @@ var all = new Vue({
             index=layer.load(1);
             _upFile.addEventListener("change",function(){
                 if (_upFile.files.length === 0) {
+                    layer.closeAll();
                     alert("请选择图片");
                     return; }
                 var oFile = _upFile.files[0];
@@ -535,6 +536,7 @@ var all = new Vue({
                  return;
                  }*/
                 if(!new RegExp("(jpg|jpeg|png)+","gi").test(oFile.type)){
+                    layer.closeAll();
                     alert("照片上传：文件类型必须是JPG、JPEG、PNG");
                     return;
                 }
@@ -565,6 +567,7 @@ var all = new Vue({
                 layer.closeAll();
                 reader.readAsDataURL(oFile);
             },false);
+            layer.closeAll();
         },
         add_design:function(){
             $("#des").attr("disabled","disabled");
